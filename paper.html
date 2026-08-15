@@ -1,0 +1,147 @@
+<!doctype html>
+<!-- build-research-atlas managed asset: reader-ui-v2 -->
+<html lang="zh-CN" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="研究工作的机制、证据、局限与一手来源。">
+  <title>工作详情｜研究地图</title>
+  <script>document.documentElement.className = "js";</script>
+  <link rel="stylesheet" href="css/atlas.css">
+  <script defer src="data/atlas-meta.js"></script>
+  <script defer src="data/papers-data.js"></script>
+  <script defer src="js/paper.js"></script>
+</head>
+<body class="paper-page">
+  <a class="skip-link" href="#paperContent">跳到条目正文</a>
+
+  <header class="site-header">
+    <a class="site-mark" href="index.html#atlas-index">
+      <span aria-hidden="true">←</span>
+      <span>返回文献索引</span>
+    </a>
+    <nav id="detailNav" aria-label="详情页导航">
+      <a href="#mechanism">机制</a>
+      <a href="#evidence">证据</a>
+      <a href="#limitations">局限</a>
+      <a href="#sources">来源</a>
+    </nav>
+  </header>
+
+  <main id="paperContent" class="paper-main" tabindex="-1">
+    <article id="paperArticle" hidden>
+      <header class="paper-hero">
+        <div>
+          <p id="paperRoute" class="eyebrow">路线</p>
+          <h1 id="paperTitle">工作题名</h1>
+          <p id="paperTitleLocal" class="paper-local-title"></p>
+          <p id="paperElevator" class="paper-elevator"></p>
+        </div>
+        <dl id="paperFacts" class="paper-facts"></dl>
+      </header>
+
+      <nav id="paperSectionNav" class="paper-section-nav" aria-label="本页目录">
+        <a href="#problem">研究问题</a>
+        <a href="#mechanism">方法机制</a>
+        <a href="#evidence">证据</a>
+        <a href="#limitations">适用边界</a>
+        <a href="#implications">地图定位</a>
+        <a href="#sources">一手入口</a>
+      </nav>
+
+      <section id="problem" class="paper-section" aria-labelledby="problem-title">
+        <div class="section-index">问题</div>
+        <div>
+          <h2 id="problem-title">它要解决的关键问题</h2>
+          <p id="paperProblem"></p>
+        </div>
+      </section>
+
+      <section id="mechanism" class="paper-section" aria-labelledby="mechanism-title">
+        <div class="section-index">机制</div>
+        <div>
+          <h2 id="mechanism-title">方法如何工作</h2>
+          <p id="paperMechanism"></p>
+          <figure class="mechanism-figure">
+            <div class="mechanism-scroll" tabindex="0" aria-label="可横向滚动的机制步骤示意图">
+              <svg id="mechanismDiagram" role="img" aria-labelledby="diagramTitle diagramDesc"></svg>
+            </div>
+            <figcaption>根据条目文字证据绘制的解释性示意图，不是原论文图像。</figcaption>
+          </figure>
+          <ol id="mechanismSteps" class="mechanism-steps"></ol>
+        </div>
+      </section>
+
+      <section id="evidence" class="paper-section" aria-labelledby="evidence-title">
+        <div class="section-index">证据</div>
+        <div>
+          <h2 id="evidence-title">关键证据与可核验结果</h2>
+          <ul id="paperEvidence" class="evidence-list"></ul>
+          <div id="paperEvidenceLocationsBlock" class="evidence-locations-block" hidden>
+            <h3>证据定位</h3>
+            <ul id="paperEvidenceLocations" class="evidence-locations-list"></ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="limitations" class="paper-section" aria-labelledby="limitations-title">
+        <div class="section-index">局限</div>
+        <div>
+          <h2 id="limitations-title">局限与适用边界</h2>
+          <ul id="paperLimitations" class="limitations-list"></ul>
+        </div>
+      </section>
+
+      <section id="implications" class="paper-section" aria-labelledby="implications-title">
+        <div class="section-index">定位</div>
+        <div>
+          <h2 id="implications-title">为什么值得纳入这张地图</h2>
+          <ul id="paperImplications" class="implications-list"></ul>
+        </div>
+      </section>
+
+      <section id="sources" class="paper-section" aria-labelledby="sources-title">
+        <div class="section-index">来源</div>
+        <div>
+          <h2 id="sources-title">一手来源与核验说明</h2>
+          <p id="paperSourceNote"></p>
+          <div id="paperVersionBlock" class="paper-version-block" hidden>
+            <h3>版本与出版关系</h3>
+            <p id="paperVersionNote"></p>
+          </div>
+          <div id="paperLinks" class="source-links"></div>
+          <div id="relatedBlock" class="related-block" hidden>
+            <h3>地图中的相邻条目</h3>
+            <ul id="relatedPapers"></ul>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <section id="paperNotFound" class="not-found" hidden>
+      <p class="eyebrow">条目不可用</p>
+      <h1>没有找到这个条目</h1>
+      <p id="notFoundReason">请从文献索引重新进入。</p>
+      <a class="button primary" href="index.html#atlas-index">返回文献索引</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p><strong id="detailFooterTitle">研究地图</strong></p>
+    <p>解释图为原创重绘 · 事实以一手来源为准</p>
+  </footer>
+
+  <noscript>
+    <section class="noscript-note">
+      <h2>详情页需要本地脚本</h2>
+      <p>可返回<a href="index.html#atlas-index">文献索引</a>，或直接阅读<a href="docs/REPORT.md">综合报告</a>。</p>
+      <ul class="artifact-links">
+        <li><a href="docs/SEARCH_AUDIT.md">检索与证据审计</a></li>
+        <li><a href="atlas.json">研究数据真源</a></li>
+        <li><a href="README.md">交付说明</a></li>
+      </ul>
+    </section>
+  </noscript>
+</body>
+</html>

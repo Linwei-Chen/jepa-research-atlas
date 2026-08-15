@@ -1,0 +1,35 @@
+claim_id,claim_text,paper_id,evidence_location,V,D,P,Q,audit_status,notes
+C001,2022年文稿提出JEPA与分层自主智能蓝图但不是实验验证或潜在预测优先权证明,lecun-2022-ami,全文§4.4至§4.8与图16,V1,D0,P1,Q1,qualified,官方报告
+C002,固定或慢变化背景可成为JEPA捷径因此潜在预测不会无条件过滤低层噪声,sobal-2022-slow-features,正文§2至§3与图3,V2,D1,P1,Q2,verified,合成设置外推受限
+C003,深线性分析支持JEPA优先学习高回归影响特征而非自动学习语义,littwin-2024-noisy-features,正文§3至§4,V2,D1,P3,Q3,verified,理论假设已限定
+C004,高幅值无关特征下联合嵌入达到最优所需的增强对齐条件弱于重建,van-assel-2025-joint-vs-reconstruction,定理与受控实验,V2,D1,P3,Q3,verified,不外推为所有任务统一优势
+C005,I-JEPA是静态空间遮挡潜在预测而不是带时间动作和规划的完整世界模型,assran-2023-ijepa,图2与§3,V3,D2,P3,Q3,verified,结构边界
+C006,EMA目标编码器不能从理论上排除全部或维度坍塌,mo-2024-cjepa,§3.2至§3.3与实验,V3,D2,P3,Q3,qualified,存在性批评不等于每次训练都会坍塌
+C007,LeJEPA用SIGReg尝试去除EMA和停止梯度但截至截止日仍是预印本,balestriero-2025-lejepa,摘要方法与官方代码,V3,D2,P1,Q2,verified,正式状态已核验
+C008,V-JEPA的最佳训练目标主要是非因果遮挡补全不能直接表述为经验证的长期未来滚动器,bardes-2024-vjepa,§3与掩码消融表4,V4,D3,P3,Q3,verified,因果掩码结果更弱
+C009,V-JEPA冻结ViT-H在K400和SSv2及ImageNet的摘要结果分别为81.9和72.2及77.9,bardes-2024-vjepa,正式摘要与表6,V4,D3,P3,Q3,verified,读出器协议需同时报告
+C010,V-JEPA 2的动作无关预训练与动作条件后训练是同一论文内的不同阶段,assran-2025-vjepa2,§2至§4,V4,D3,P1,Q2,verified,2-AC不另计文献
+C011,V-JEPA 2-AC的零样本仅指部署场景未采集本地任务数据而非未使用机器人动作数据,assran-2025-vjepa2,§3至§4与附录B,V4,D3,P1,Q2,qualified,不足62小时DROID动作数据用于后训练
+C012,V-JEPA 2-AC实机拾放依赖人工中间目标且主实验以短视距规划为主,assran-2025-vjepa2,表2至表3与附录B.3至B.4,V4,D3,P1,Q2,verified,不能外推为自主长任务分解
+C013,HWM直接验证只给最终目标图的实机非贪心分层规划但仍需离线数据训练高层模型,zhang-2026-hwm,§2至§4与表1至表4,V4,D3,P1,Q3,qualified,预印本
+C014,DINO-WM在六类仿真环境中用冻结DINOv2块特征和CEM完成零样本目标规划,zhou-2025-dino-wm,§3至§4与主要结果表,V4,D3,P3,Q3,verified,非JEPA品牌但机制直接
+C015,无奖励离线规划研究显示模型式潜在动力学在未见布局和次优数据上更具数据效率,sobal-2025-reward-free-planning,§4.2至§4.8与表1至表2,V4,D3,P3,Q3,verified,结论限导航环境
+C016,TD-JEPA预测策略条件长期占用和后继特征而不是在线MPC逐帧滚动,bagatella-2026-td-jepa,§3.1至§3.3与理论,V3,D3,P3,Q3,verified,与同名Temporal-Distance JEPA消歧
+C017,TMLR设计审计表明编码器预测器目标代价与规划器之间存在强交互且端到端成功率不能定位失效源,terver-2025-jepa-wm-drivers,设计表与系统消融,V4,D3,P3,Q3,verified,有复现认证
+C018,TMLR设计审计发现产生V-JEPA 2-AC官方结果的二步滚动损失实现存在错误,terver-2025-jepa-wm-drivers,附录V-JEPA-2-AC reproduction,V4,D3,P3,Q3,verified,修复后重新训练
+C019,朴素分层搜索会因搜索分布偏离训练支持而比平坦LeWorldModel更差,caselli-2026-mind-the-gap,摘要与Push-T长视距实验,V2,D2,P1,Q2,verified,预印本反例
+C020,边际高斯化在多任务世界模型中可能压缩任务簇间距并产生表示混叠,liu-2026-temporally-centered-sigreg,摘要与LIBERO实验,V2,D2,P1,Q1,qualified,近期预印本
+C021,SALT证明冻结教师可训练强视频潜在预测学生但教师本身由像素重建获得,li-2026-salt,方法与匹配FLOPs实验,V4,D3,P3,Q3,verified,不能称完全无生成式成本
+C022,图像JEPA的上下文目标和掩码经验不能无条件迁移到音频,riou-2024-audio-design,音频设计消融,V3,D2,P2,Q2,verified,研讨会规模
+C023,AnySat把十一类传感器纳入统一地球观测模型但同时使用跨模态InfoNCE,astruc-2025-anysat,图3与§3.2及公式5,V4,D3,P3,Q3,verified,不是纯潜在回归
+C024,M3-JEPA同时使用预测器对齐和对比及正则损失因此JEPA与对比学习并非绝对互斥,lei-2025-m3-jepa,§3与正式摘要,V3,D3,P3,Q3,verified,混合目标已标注
+C025,LLM-JEPA保留下一词元损失并依赖互补配对视图因此不是生成训练的通用替代,huang-2026-llm-jepa,§3.1至§3.3与公式2,V3,D2,P3,Q3,qualified,语言多解性边界
+C026,VL-JEPA预测连续文本语义并按需解码且正式论文报告约2.85倍解码操作减少,chen-2026-vl-jepa,正式摘要与§2至§3,V4,D3,P3,Q3,verified,依赖强编码器和后续监督
+C027,Vol-JEPA在卫生系统规模三维神经影像上提供正式临床规模证据但主要是回顾性验证,kondepudi-2026-neurovfm,图1b与Methods及扩展数据,V4,D3,P3,Q3,qualified,不能外推为前瞻临床效益
+C028,PhysioJEPA在2631名患者超过一千万分钟多路生理信号上评估短期风险,fox-2026-physiojepa,正式摘要与图1至图2,V3,D3,P3,Q3,verified,仅两个短期终点
+C029,语义视频表示可提升机器人策略但可能遗漏几何和接触细节,nilaksh-2026-reconstruction-semantics,统一编码器比较与摘要,V2,D3,P1,Q2,qualified,预印本和任务依赖
+C030,在已核核心文献中未见系统的对抗校准碰撞约束故障安全和危险长尾评测,lecun-2022-ami,跨47项核心与桥接条目的缺失证据审计,V4,D0,PX,Q0,inference,缺失证据不等于证明不安全
+C031,截至截止日尚不能证明JEPA普遍优于MAE或所有重建目标,assran-2023-ijepa,论文对照表与跨条目比较,V4,D2,P3,Q3,qualified,优势依赖任务视图和读出协议
+C032,生成式与JEPA并非严格二分因为D-JEPA和VL-JEPA均保留可选或联合生成路径,chen-2025-djepa,方法与生成实验,V3,D2,P3,Q3,verified,更准确表述是主训练目标是否重建全部观测
+C033,跨域成功不能只由冻结探针分数推断真实部署因医学遥感和机器人均存在域偏移缺口,kondepudi-2026-neurovfm,跨域与外部验证章节,V4,D3,P3,Q3,inference,综合推断
+C034,两轮最终扩展检索的边际纳入率分别为0%和4.2%且没有新增一级路线,zhu-2026-ad-l-jepa,检索账本收敛轮3和轮4,V2,D2,P3,Q2,verified,满足操作性停止条件

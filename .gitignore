@@ -1,0 +1,29 @@
+# 本地系统文件
+.DS_Store
+Thumbs.db
+
+# 构建与浏览器临时文件
+__pycache__/
+*.py[cod]
+node_modules/
+playwright-report/
+test-results/
+
+# 内部执行记录与迁移备份不属于公开综述
+migration_backups/
+publication_backups/
+planning/*
+!planning/research_contract.yaml
+!planning/search_ledger.jsonl
+!planning/screening.csv
+!planning/claim_ledger.csv
+!planning/corpus_selection.md
+qa/
+agents/
+agent-notes/
+research/
+screenshots/
+task_plan.md
+findings.md
+progress.md
+validation/
